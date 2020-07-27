@@ -3,6 +3,7 @@ class Train < ApplicationRecord
       has_many :reservations
        belongs_to :user, :optional => true
 
+          mount_uploader :train_logo, TrainLogoUploader
 
         # 产生所有位置从 1A~6C
   # ["1A", "1B", "1C", "2A", "2B", "2C", "3A", "3B", "3C",
